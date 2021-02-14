@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Watch</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+</head>
+<body class="bg-dark">
+    <header class="container-fluid">
+        <h1 class="text-center text-primary mt-3">Crypto Watch</h1>
+    </header>
+
+    <main>
+        <section class="container mb-3">
+            <div class="row mt-4">
+                <div class="form-group mx-auto col">
+                    <label for="crypto" class="text-white">Converter de:</label>
+                    <select name="crypto" id="crypto" class="form-control">
+                        <option value="btc">Bitcoin (BTC)</option>
+                        <option value="ltc">Litecoin (LTC)</option>
+                        <option value="doge">Dogecoin (DOGE)</option>
+                        <option value="eth">Ethereum (ETH)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group mx-auto col">
+                    <label for="currency" class="text-white">Para:</label>
+                    <select name="currency" id="currency" class="form-control">
+                        <option value="usd">Dólar Americano (USD)</option>
+                        <option value="eur">Euro (EUR)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col">
+                    <label for="value" class="text-white">Valor:</label>
+                    <input type="number" name="value" id="value" class="form-control" value="0">
+                </div>
+            </div>
+
+            <div class="row mx-auto">
+                <button class="btn btn-info col" id="btn-convert">Converter</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="row">
+                <h2 class="text-primary text-center col" id="results"></h2>
+            </div>
+        </section>
+    </main>
+
+    <footer class="col fixed-bottom">
+        <p class="text-white text-center mb-0">Desenvolvido por Cauã L. Werling <a href="https://github.com/CauaLW" class="p-2"><img class="mb-2" src="./assets/github-icon.png" alt="Logo Github"></a> <a href="https://www.linkedin.com/in/cau%C3%A3-loewen-werling-a564801b7/"><img class="mb-2" src="./assets/linkedin-icon.png" alt="Logo Linkedin"></a></p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
